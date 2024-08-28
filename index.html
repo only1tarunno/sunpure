@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- daisy ui  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Sunpure</title>
+</head>
+
+<body>
+    <header>
+        <nav class="w-full bg-[#333] z-20 top-0 py-5 lg:py-12 relative">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-4 lg:px-10 ">
+                <a href="/" class="lg:absolute top-1 left-16">
+                    <img src="./img/logo.png" class="w-16 lg:w-44" alt="Logo">
+                </a>
+                <div class="hidden lg:block"></div>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+                    <div class="flex items-center gap-2">
+                        <a href="#"><img src="./img/wp.png" class="w-7" alt="whatsapp"></a>
+                        <a href="#"><img src="./img/phone.png" class="w-7" alt="Phone"></a>
+                        <a href="tel:+91 93550 31295" class="text-white text-base lg:text-xl font-bold">+91 93550
+                            31295</a>
+                    </div>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 text-white text-base lg:text-xl font-bold border mt-4 md:mt-0 md:border-0 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row">
+                        <li><a href="#overview" class="uppercase">overview</a></li>
+                        <li><a href="#features" class="uppercase">features</a></li>
+                        <li><a href="#gallery" class="uppercase">gallery</a></li>
+                        <li><a href="#floor-plan" class="uppercase">Floor Plan</a></li>
+                        <li><a href="#gallery" class="uppercase">Specifications</a></li>
+                        <li><a href="#gallery" class="uppercase">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- banner start here  -->
+    <section class="bg-[#fabb30] relative" id="hero">
+        <div
+            class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 py-10 lg:py-16 flex justify-between flex-col lg:flex-row items-center min-h-[720px] gap-y-8">
+            <div class="w-full lg:w-[60%] text-center">
+                <h1 class="text-[#2c4e74] font-extrabold text-3xl lg:text-[36px] pb-5">Only 8 residences left. Infinite
+                    luxury!
+                </h1>
+                <div class="relative">
+                    <div class="relative w-full pb-[56.25%]">
+                        <img src="./img/banner/thumbnail.jpg" alt="Thumbnail"
+                            class="absolute top-0 left-0 w-full h-full object-cover z-10 cursor-pointer"
+                            onclick="this.style.display='none'; this.nextElementSibling.style.opacity='1';" />
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-500 ease-in-out"
+                            src="https://www.youtube.com/embed/668nUCeBHyY?si=MqfLkpGzokzo736_"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <img src="./img/banner/price.png"
+                        class="absolute w-[120px] xl:w-[150px] z-50 -bottom-2 xl:-bottom-[10%] -left-2 xl:-left-[10%]"
+                        alt="">
+                </div>
+
+                <h2 class="text-[#242a35] font-extrabold text-2xl pt-5">3 BHK Luxury Villas at Vijayanagar,
+                    Mysore
+                </h2>
+            </div>
+            <div class="w-full lg:w-[35%] bg-[#2c4e74] px-5 py-8 xl:px-7 xl:py-10">
+                <h3 class="text-center mb-5 font-extrabold text-2xl text-white">Tell me more on Happiness-II</h3>
+                <form action="" class="space-y-4">
+                    <input type="text" name="" class="text-lg font-medium bg-[#e9e8e7] rounded-md h-16 w-full"
+                        placeholder="Enter your name " id="">
+                    <input type="email" name="" class="text-lg font-medium bg-[#e9e8e7] rounded-md h-16 w-full"
+                        placeholder="Email id" id="">
+                    <input type="text" name="" class="text-lg font-medium bg-[#e9e8e7] rounded-md h-16 w-full"
+                        placeholder="Mobile number" id="">
+                    <button
+                        class="text-[#2c4e74] bg-[#fabb30] px-4 py-2 rounded-md font-extrabold text-xl uppercase sm:text-[26px]">
+                        I'm interested!</button>
+                </form>
+                <p class="font-medium text-sm text-white pt-6 flex items-center gap-2"><span><img
+                            src="./img/banner/sheild.png" alt="Safe"></span><span>Your information is safe with
+                        us</span></p>
+            </div>
+
+        </div>
+        <p
+            class="text-black text-base 2xl:text-xl absolute hidden xl:block xl:-left-[160px] 2xl:-left-[10%] top-1/2 -translate-y-1/2 -rotate-90">
+            RERA:
+            PRM/KA/RERA/1268/378/PR/150423/005864
+        </p>
+
+    </section>
+
+    <!-- overview start here  -->
+    <section class="bg-gradient-to-r from-[#6f6347] via-[#4d4d4d] to-[#6e6248] relative" id="overview">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 py-10 lg:py-16">
+            <h2 class="text-center font-bold text-[#fabb30] text-3xl lg:text-[40px]">Overview</h2>
+            <div class="flex items-center gap-6 justify-between mt-10 lg:mt-14 relative flex-col-reverse lg:flex-row">
+                <div class="w-full lg:w-[57%] space-y-5">
+                    <h2 class="text-white text-2xl lg:text-3xl font-bold ">
+                        A perfect blend of utility, aesthetics & luxury
+                    </h2>
+                    <p class="font-medium text-base lg:text-2xl text-white">When we set out to develop Happiness-II, we
+                        not just wanted to build villas, but a community.
+                        Happiness-II aims to
+                        achieve life in a shared neighbourhood with all your needs met within, and as a place for like
+                        minded people to connect
+                        and thrive. We strive for harmony with nature and to use quality materials that blend seamlessly
+                        with the landscape.</p>
+                </div>
+                <div class="w-full lg:w-[35%]">
+                    <img src="./img/overview.png" class="w-full md:w-1/2 mx-auto lg:w-full relative z-20" alt="">
+                </div>
+                <img src="./img/overviewbg.png"
+                    class="absolute w-[200px] hidden lg:block lg:-top-5  lg:-right-5 xl:-top-8 xl:-right-9"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- reason start here  -->
+    <section class="bg-[#fabb30] relative overflow-hidden">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16 relative z-50">
+            <h2 class="text-center font-bold text-black text-3xl lg:text-[40px]">Happy Reasons to Choose Happiness-II
+            </h2>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-x-6 gap-y-6 lg:gap-y-14  mt-10 lg:mt-20">
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/location.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Prime location</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/lifestyle.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Lifestyle enhancing floor
+                        plans</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/smart.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Smart usage of space</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/aesthetic.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Aesthetic facades</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/focus.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Focus on greenery</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/indoor.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Indoor green courts</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/well.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Well designed layout</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/high.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">High quality construction
+                    </h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/premium.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Premium fittings, doors &
+                        tiles</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/ready.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Ready to occupy homes</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/onestop.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">One-stop home solution
+                    </h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/fast.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Fast turnaround time</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/hassle-free.png"
+                            class="max-w-28 mx-auto" alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Hassle free paperwork</h3>
+                </div>
+                <!-- single item  -->
+                <div>
+                    <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/excellent.png" class="max-w-28 mx-auto"
+                            alt=""></div>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-3xl">Excellent approach roads
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <img src="./img/happy-reasons/bottomlogo.png"
+            class="w-[150px] lg:w-[200px] hidden md:block absolute -bottom-6 right-12 lg:right-[20%]" alt="">
+        <p
+            class="text-[#e5b037] text-3xl hidden xl:block xl:text-9xl font-bold absolute uppercase xl:-left-[350px] top-1/2 -translate-y-1/2 -rotate-90">
+            Happiness-II
+        </p>
+    </section>
+    <!-- reason start here  -->
+    <section class="bg-gradient-to-r from-[#6e6247] via-[#4d4d4d] to-[#6e6247] relative overflow-hidden">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16 relative z-50">
+            <h2 class="text-center font-bold text-[#c79929] text-3xl lg:text-[40px]">Features
+            </h2>
+            <div
+                class="grid grid-cols-1  sm:grid-cols-2  gap-x-6 gap-y-6 lg:gap-y-10  mt-10 lg:mt-20">
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/strom.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Storm Drain </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">Scientifically-designed in concrete</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/road.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Road Network  </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">Excellent connectivity</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/electric.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Electrical System </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">Complete underground wiring</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/sanitation.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Sanitation </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">Underground sanitary network</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/modern.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Modern lights</h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">Beautiful contemporary lighting</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/garden.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Garden & Play Area </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">2 beautifully landscaped parks</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
+                    <div class="w-full md:w-28">
+                        <img src="./img/features/water.png" class="max-w-28 mx-auto" alt="">
+                    </div>
+                    <div class="flex-1 text-center md:text-start">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Water Network </h3>
+                        <p class="text-lg lg:text-2xl font-medium text-white">No more complex water system</p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        <p
+            class="text-[#716751] text-3xl hidden xl:block xl:text-9xl font-bold absolute uppercase  xl:-right-[220px]  top-1/2 -translate-y-1/2 -rotate-90">
+            Features
+        </p>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
