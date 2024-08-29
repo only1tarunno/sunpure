@@ -10,10 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <!-- daisy ui  -->
+    <!-- Flowbite   -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- slick slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
 
     <!-- custom css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -23,21 +26,21 @@
 
 <body>
     <header>
-        <nav class="w-full bg-[#333] z-20 top-0 py-5 lg:py-12 relative">
+        <nav class="w-full bg-[#333] z-20 top-0 py-5 xl:py-12 relative">
             <div class="flex flex-wrap items-center justify-between mx-auto px-4 lg:px-10 ">
-                <a href="/" class="lg:absolute top-1 left-16">
-                    <img src="./img/logo.png" class="w-16 lg:w-44" alt="Logo">
+                <a href="/" class="xl:absolute top-1 left-5 2xl:left-[3%]">
+                    <img src="./img/logo.png" class="w-16 xl:w-32 2xl:w-44" alt="Logo">
                 </a>
                 <div class="hidden lg:block"></div>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+                <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse items-center">
                     <div class="flex items-center gap-2">
                         <a href="#"><img src="./img/wp.png" class="w-7" alt="whatsapp"></a>
                         <a href="#"><img src="./img/phone.png" class="w-7" alt="Phone"></a>
-                        <a href="tel:+91 93550 31295" class="text-white text-base lg:text-xl font-bold">+91 93550
+                        <a href="tel:+91 93550 31295" class="text-white text-base xl:text-lg 2xl:text-xl font-bold">+91 93550
                             31295</a>
                     </div>
                     <button data-collapse-toggle="navbar-sticky" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2"
                         aria-controls="navbar-sticky" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -47,15 +50,15 @@
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 xl:ml-14 2xl:ml-0" id="navbar-sticky">
                     <ul
-                        class="flex flex-col p-4 md:p-0 text-white text-base lg:text-xl font-bold border mt-4 md:mt-0 md:border-0 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row">
+                        class="flex flex-col p-4 lg:p-0 text-white text-base xl:text-lg 2xl:text-xl font-bold border mt-4 lg:mt-0 lg:border-0 rounded-lg lg:space-x-4 xl:space-x-8 rtl:space-x-reverse lg:flex-row">
                         <li><a href="#overview" class="uppercase">overview</a></li>
                         <li><a href="#features" class="uppercase">features</a></li>
                         <li><a href="#gallery" class="uppercase">gallery</a></li>
                         <li><a href="#floor-plan" class="uppercase">Floor Plan</a></li>
-                        <li><a href="#gallery" class="uppercase">Specifications</a></li>
-                        <li><a href="#gallery" class="uppercase">Location</a></li>
+                        <li><a href="#specifications" class="uppercase">Specifications</a></li>
+                        <li><a href="#location" class="uppercase">Location</a></li>
                     </ul>
                 </div>
             </div>
@@ -120,7 +123,7 @@
     </section>
 
     <!-- overview start here  -->
-    <section class="bg-gradient-to-r from-[#6f6347] via-[#4d4d4d] to-[#6e6248] relative" id="overview">
+    <section class="bg-gradient-to-r from-[#6f6347] via-[#4d4d4d] to-[#6e6248]" id="overview">
         <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 py-10 lg:py-16">
             <h2 class="text-center font-bold text-[#fabb30] text-3xl lg:text-[40px]">Overview</h2>
             <div class="flex items-center gap-6 justify-between mt-10 lg:mt-14 relative flex-col-reverse lg:flex-row">
@@ -136,12 +139,9 @@
                         and thrive. We strive for harmony with nature and to use quality materials that blend seamlessly
                         with the landscape.</p>
                 </div>
-                <div class="w-full lg:w-[35%]">
-                    <img src="./img/overview.png" class="w-full md:w-1/2 mx-auto lg:w-full relative z-20" alt="">
+                <div class="w-full lg:w-[40%]">
+                    <img src="./img/overview-1.png" class="w-full md:w-1/2 mx-auto lg:w-full" alt="">
                 </div>
-                <img src="./img/overviewbg.png"
-                    class="absolute w-[200px] hidden lg:block lg:-top-5  lg:-right-5 xl:-top-8 xl:-right-9"
-                    alt="">
             </div>
         </div>
     </section>
@@ -256,8 +256,7 @@
         <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16 relative z-50">
             <h2 class="text-center font-bold text-[#c79929] text-3xl lg:text-[40px]">Features
             </h2>
-            <div
-                class="grid grid-cols-1  sm:grid-cols-2  gap-x-6 gap-y-6 lg:gap-y-10  mt-10 lg:mt-20">
+            <div class="grid grid-cols-1  sm:grid-cols-2  gap-x-6 gap-y-6 lg:gap-y-10  mt-10 lg:mt-20">
                 <!-- single item  -->
                 <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center">
                     <div class="w-full md:w-28">
@@ -274,7 +273,7 @@
                         <img src="./img/features/road.png" class="max-w-28 mx-auto" alt="">
                     </div>
                     <div class="flex-1 text-center md:text-start">
-                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Road Network  </h3>
+                        <h3 class="text-2xl lg:text-3xl font-bold text-white">Road Network </h3>
                         <p class="text-lg lg:text-2xl font-medium text-white">Excellent connectivity</p>
                     </div>
                 </div>
@@ -328,7 +327,7 @@
                         <p class="text-lg lg:text-2xl font-medium text-white">No more complex water system</p>
                     </div>
                 </div>
-             
+
             </div>
         </div>
         <p
@@ -337,9 +336,414 @@
         </p>
     </section>
 
+    <!-- gallery start here  -->
+    <section class="bg-[#fabb30]" id="gallery">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16">
+            <h2 class="text-center font-bold text-black text-3xl lg:text-[40px]">Gallery
+            </h2>
+            <div class="relative mt-10 lg:mt-20">
+                <div class="absolute top-1/2 -translate-y-1/2 z-50 left-0 lg:-left-[2%] 2xl:-left-[6%]">
+                    <button class="prev slick-arrow">
+                        <img src="./img/gallery/left.png" alt="prev" class="w-5 lg:8 2xl:w-14" />
+                    </button>
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-50 right-0 lg:-right-[2%] 2xl:-right-[6%]">
+                    <button class="next slick-arrow">
+                        <img src="./img/gallery/right.png" alt="right" class="w-5 lg:8 2xl:w-14" />
+                    </button>
+                </div>
+                <div class="gallerySlider">
+                    <div>
+                        <img class="mx-auto" src="./img/gallery/g1.png" alt="">
+                    </div>
+                    <div>
+                        <img class="mx-auto" src="./img/gallery/g2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="mx-auto" src="./img/gallery/g3.png" alt="">
+                    </div>
+                    <div>
+                        <img class="mx-auto" src="./img/gallery/g2.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor plan start here  -->
+    <section class="bg-gradient-to-r from-[#6d6148] via-[#4d4d4d] to-[#6f6347]" id="floor-plan">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16">
+            <h2 class="text-center font-bold text-[#c79929] text-3xl lg:text-[40px]">Floor Plan
+            </h2>
+            <h3 class="text-2xl lg:text-3xl text-white mt-4 lg:mt-10 text-center font-semibold">East Facing Villas,
+                North Enterance</h3>
+            <div class="relative mt-10 lg:mt-20">
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 left-0 lg:-left-[2%] 2xl:-left-[6%]">
+                    <button class="prev1 slick-arrow">
+                        <img src="./img/floor-plan/left.png" alt="prev" class="w-5 lg:8 2xl:w-14" />
+                    </button>
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 z-10 right-0 lg:-right-[2%] 2xl:-right-[6%]">
+                    <button class="next2 slick-arrow">
+                        <img src="./img/floor-plan/right.png" alt="right" class="w-5 lg:8 2xl:w-14" />
+                    </button>
+                </div>
+                <div class="floorySlider">
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f3.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f4.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f5.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f7.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f8.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f9.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f10.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f11.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-[537px] object-cover mx-auto" src="./img/floor-plan/f12.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- <h3 class="text-2xl lg:text-3xl font-semibold text-black">Flooring</h3>
+<h3 class="text-2xl lg:text-3xl font-semibold text-[#2c4e74]">Flooring</h3>
+<ul class="list-disc text-black text-base lg:text-lg ms-5">
+    <li>RCC - Framed structure</li>
+    <li>Anti-termite treated</li>
+    <li>Solid Blocks for Walls</li>
+    <li>Internal Wall Finish: Plaster with superior finish</li>
+    <li>External Wall Finish: Cement Plaster</li>
+</ul> -->
+    <!-- Specifications start here  -->
+    <section class="bg-gradient-to-r from-[#fabb30] to-[#fcd041] relative" id="specifications">
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16">
+            <h2 class="text-center font-bold text-black text-3xl lg:text-[40px]">Specifications
+            </h2>
+            <div class="flex flex-col-reverse lg:flex-row gap-5 justify-between items-center mt-10 lg:mt-20 relative z-50">
+                <div class="w-full lg:w-[35%]">
+                    <div id="accordionExample" class="space-y-2 lg:space-y-4">
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                    data-img="Structure.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Structure</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingOne">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                    <li>Solid Blocks for Walls</li>
+                                    <li>Internal Wall Finish: Plaster with superior finish</li>
+                                    <li>External Wall Finish: Cement Plaster</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                    data-img="Flooring.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Flooring</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse3" aria-expanded="false" aria-controls="collapse3"
+                                    data-img="Doors.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Doors</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse4" aria-expanded="false" aria-controls="collapse4"
+                                    data-img="Plumbing-lines.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Plumbing lines</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse5" aria-expanded="false" aria-controls="collapse5"
+                                    data-img="Electrical.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Electrical</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse6" aria-expanded="false" aria-controls="collapse6"
+                                    data-img="Windows.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Windows</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse7" aria-expanded="false" aria-controls="collapse7"
+                                    data-img="Bathroom.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Bathroom</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse7" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse8" aria-expanded="false" aria-controls="collapse8"
+                                    data-img="Paint.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Paint</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse8" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse9" aria-expanded="false" aria-controls="collapse9"
+                                    data-img="Railing.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Railing</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse9" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse10" aria-expanded="false" aria-controls="collapse10"
+                                    data-img="Solar-provision.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Solar provision</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse10" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse11" aria-expanded="false" aria-controls="collapse11"
+                                    data-img="Miscellaneous.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Miscellaneous</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse11" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single item -->
+                        <div class="accordion-item">
+                            <h2 class="mb-0">
+                                <button type="button"
+                                    class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
+                                    data-accordion-target="#collapse12" aria-expanded="false" aria-controls="collapse12"
+                                    data-img="Other-advantages.png">
+                                    <span class="flex items-center">
+                                        <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Other advantages</span>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapse12" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
+                                <ul class="list-disc text-black text-base lg:text-lg ms-5">
+                                    <li>RCC - Framed structure</li>
+                                    <li>Anti-termite treated</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[60%]" id="accrodionImg">
+                    <img src="./img/specifications/Structure.png" class="h-[500px] object-cover mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+        <p
+            class="text-[#e5b037] text-3xl hidden xl:block xl:text-9xl font-bold absolute uppercase xl:-left-[300px] top-1/2 -translate-y-1/2 -rotate-90">
+            Structure
+        </p>
+    </section>
+
+    <!-- Location start here  -->
+    <section class="bg-gradient-to-r from-[#6d6148] via-[#4d4d4d] to-[#6f6347]" id="location">
+
+        <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16">
+            <h2 class="text-center font-bold text-[#c79929] text-3xl lg:text-[40px]">Location
+            </h2>
+            <h3 class="text-2xl lg:text-3xl text-white mt-4 lg:mt-10 text-center font-bold">
+                A landmark that puts you on a pedestal!
+            </h3>
+            <p class="text-center text-white text-lg md:text-xl lg:text-2xl mt-4 mx-auto max-w-[1000px]">
+                Happiness-II is nestled among nature's beauty in Vijayanagar 4th Stage in Mysuru located just 13 kms
+                from the iconic
+                Chamundi Hills.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- map start here  -->
+    <section class="">
+        <iframe class="block h-[300px] lg:h-[800px]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988669535!2d-0.2664033999507271!3d51.52873980503857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1724909723359!5m2!1sen!2sbd"
+            width="100%"  style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- footer start here  -->
+    <footer class="bg-[#fabb30] text-center py-5 lg:py-8">
+        <p class="text-black text-base lg:text-2xl">©Sunpure Homes Happiness - II All rights reserved.</p>
+        <p class="text-[#2c4e74] text-base lg:text-2xl mt-2">Design & Development: BYT</p>
+    </footer>
 
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js"></script>
+    
 </body>
 
 </html>

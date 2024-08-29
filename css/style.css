@@ -1,3 +1,12 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
+.gallerySlider .slick-slide {
+    margin: 0 10px;
+    /* 10px on each side = 20px total margin */
+}
+
+.gallerySlider .slick-list {
+    margin: 0 -10px;
+    /* Negate the left and right margins to prevent overflow */
+}
