@@ -33,52 +33,53 @@
                     "2xl": "1440px",
                     "3xl": "1540px",
                 },
-                
+
             },
         };
     </script>
 </head>
 
-<body>
+<body class="scroll-smooth">
     <header class="sticky top-0 z-50 bg-[#333]">
-    <nav class="w-full bg-[#333] z-20 top-0 py-5 xl:py-8 2xl:py-12 relative">
-        <div class="flex flex-wrap items-center justify-between mx-auto px-4 lg:px-10">
-            <a href="/" class="xl:absolute top-1 left-5 2xl:left-[3%]">
-                <img src="./img/logo.png" class="w-16 xl:w-32 2xl:w-44" alt="Logo">
-            </a>
-            <div class="hidden lg:block"></div>
-            <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse items-center">
-                <div class="flex items-center gap-2">
-                    <a href="tel:+91 93550 31295"><img src="./img/wp.png" class="w-7" alt="whatsapp"></a>
-                    <a href="tel:+91 93550 31295"><img src="./img/phone.png" class="w-7" alt="Phone"></a>
-                    <a href="tel:+91 93550 31295" class="text-white text-base hidden lg:block xl:text-lg 2xl:text-xl font-bold">+91 93550
-                        31295</a>
+        <nav class="w-full bg-[#333] z-20 top-0 py-5 xl:py-8 2xl:py-12 relative">
+            <div class="flex flex-wrap items-center justify-between mx-auto px-4 lg:px-10">
+                <a href="/" class="xl:absolute top-1 left-5 2xl:left-[3%]">
+                    <img src="./img/logo.png" class="w-16 xl:w-32 2xl:w-44" alt="Logo">
+                </a>
+                <div class="hidden lg:block"></div>
+                <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse items-center">
+                    <div class="flex items-center gap-2">
+                        <a href="tel:+91 93550 31295"><img src="./img/wp.png" class="w-7" alt="whatsapp"></a>
+                        <a href="tel:+91 93550 31295"><img src="./img/phone.png" class="w-7" alt="Phone"></a>
+                        <a href="tel:+91 93550 31295"
+                            class="text-white text-base hidden lg:block xl:text-lg 2xl:text-xl font-bold">+91 93550
+                            31295</a>
+                    </div>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
                 </div>
-                <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2"
-                    aria-controls="navbar-sticky" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 xl:ml-14 2xl:ml-0"
+                    id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 lg:p-0 text-white text-base xl:text-lg font-bold border mt-4 lg:mt-0 lg:border-0 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row">
+                        <li><a href="#overview" class="uppercase collapse-trigger">overview</a></li>
+                        <li><a href="#features" class="uppercase collapse-trigger">features</a></li>
+                        <li><a href="#gallery" class="uppercase collapse-trigger">gallery</a></li>
+                        <li><a href="#floor-plan" class="uppercase collapse-trigger">Floor Plan</a></li>
+                        <li><a href="#specifications" class="uppercase collapse-trigger">Specifications</a></li>
+                        <li><a href="#location" class="uppercase collapse-trigger">Location</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 xl:ml-14 2xl:ml-0"
-                id="navbar-sticky">
-                <ul
-                    class="flex flex-col p-4 lg:p-0 text-white text-base xl:text-lg font-bold border mt-4 lg:mt-0 lg:border-0 rounded-lg lg:space-x-4 rtl:space-x-reverse lg:flex-row">
-                    <li><a href="#overview" class="uppercase collapse-trigger">overview</a></li>
-                    <li><a href="#features" class="uppercase collapse-trigger">features</a></li>
-                    <li><a href="#gallery" class="uppercase collapse-trigger">gallery</a></li>
-                    <li><a href="#floor-plan" class="uppercase collapse-trigger">Floor Plan</a></li>
-                    <li><a href="#specifications" class="uppercase collapse-trigger">Specifications</a></li>
-                    <li><a href="#location" class="uppercase collapse-trigger">Location</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
 
@@ -91,7 +92,8 @@
                     luxury!
                 </h1>
                 <div class="relative">
-                    <video src="./img/avc_SunpureHomes.mp4" poster="./img/banner/thumbnail.jpg" controls class="w-full"></video>
+                    <video src="./img/avc_SunpureHomes.mp4" poster="./img/banner/thumbnail.jpg" controls
+                        class="w-full"></video>
                     <img src="./img/banner/price.png"
                         class="absolute w-[120px] xl:w-[150px] z-20 -bottom-2 xl:-bottom-[5%] -left-2 xl:-left-[8%] 2xl:-left-[12%]"
                         alt="">
@@ -102,7 +104,8 @@
                 </h2>
             </div>
             <div class="w-full lg:w-[35%] bg-[#2c4e74] px-5 py-8 xl:px-7 xl:py-10">
-                <h3 class="text-center mb-5 font-extrabold text-lg 2xl:text-2xl text-white">Tell me more on Happiness-II</h3>
+                <h3 class="text-center mb-5 font-extrabold text-lg 2xl:text-2xl text-white">Tell me more on Happiness-II
+                </h3>
                 <form action="" class="space-y-4">
                     <input type="text" name="" required class="text-lg font-medium bg-[#e9e8e7] rounded-md h-16 w-full"
                         placeholder="Enter your name " id="">
@@ -163,89 +166,103 @@
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/location.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Prime location</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Prime
+                        location</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/lifestyle.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Lifestyle enhancing floor
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Lifestyle
+                        enhancing floor
                         plans</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/smart.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Smart usage of space</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Smart usage
+                        of space</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/aesthetic.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Aesthetic facades</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Aesthetic
+                        facades</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/focus.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Focus on greenery</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Focus on
+                        greenery</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/indoor.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Indoor green courts</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Indoor green
+                        courts</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/well.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Well designed layout</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Well designed
+                        layout</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/high.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">High quality construction
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">High quality
+                        construction
                     </h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/premium.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Premium fittings, doors &
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Premium
+                        fittings, doors &
                         tiles</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/ready.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Ready to occupy homes</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Ready to
+                        occupy homes</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/onestop.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">One-stop home solution
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">One-stop home
+                        solution
                     </h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/fast.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Fast turnaround time</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Fast
+                        turnaround time</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/hassle-free.png"
                             class="max-w-28 mx-auto" alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Hassle free paperwork</h3>
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Hassle free
+                        paperwork</h3>
                 </div>
                 <!-- single item  -->
                 <div>
                     <div class="sm:min-h-[116px]"><img src="./img/happy-reasons/excellent.png" class="max-w-28 mx-auto"
                             alt=""></div>
-                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Excellent approach roads
+                    <h3 class="text-center mt-3 text-black font-semibold text-xl lg:text-2xl 3xl:text-3xl">Excellent
+                        approach roads
                     </h3>
                 </div>
             </div>
@@ -348,12 +365,14 @@
             <h2 class="text-center font-bold text-black text-3xl lg:text-[40px]">Gallery
             </h2>
             <div class="relative mt-10 lg:mt-20">
-                <div class="absolute top-1/2 -translate-y-1/2 z-20 left-0 md:-left-[40px] xl:-left-[50px] 2xl:-left-[6%]">
+                <div
+                    class="absolute top-1/2 -translate-y-1/2 z-20 left-0 md:-left-[40px] xl:-left-[50px] 2xl:-left-[6%]">
                     <button class="prev slick-arrow">
                         <img src="./img/gallery/left.png" alt="prev" class="w-5 lg:8 2xl:w-14" />
                     </button>
                 </div>
-                <div class="absolute top-1/2 -translate-y-1/2 z-20 right-0 md:-right-[40px] xl:-right-[50px] 2xl:-right-[6%]">
+                <div
+                    class="absolute top-1/2 -translate-y-1/2 z-20 right-0 md:-right-[40px] xl:-right-[50px] 2xl:-right-[6%]">
                     <button class="next slick-arrow">
                         <img src="./img/gallery/right.png" alt="right" class="w-5 lg:8 2xl:w-14" />
                     </button>
@@ -385,12 +404,14 @@
             <h3 class="text-2xl lg:text-3xl text-white mt-4 lg:mt-10 text-center font-semibold">East Facing Villas,
                 North Enterance</h3>
             <div class="relative mt-10 lg:mt-20">
-                <div class="absolute top-1/2 -translate-y-1/2 z-10 left-0 sm:left-[20px]  md:-left-[20px] xl:-left-[50px] 2xl:-left-[6%]">
+                <div
+                    class="absolute top-1/2 -translate-y-1/2 z-10 left-0 sm:left-[20px]  md:-left-[20px] xl:-left-[50px] 2xl:-left-[6%]">
                     <button class="prev1 slick-arrow">
                         <img src="./img/floor-plan/left.png" alt="prev" class="w-5 lg:8 2xl:w-14" />
                     </button>
                 </div>
-                <div class="absolute top-1/2 -translate-y-1/2 z-10 right-0 sm:right-[20px] md:-right-[20px] xl:-right-[50px] 2xl:-right-[6%]">
+                <div
+                    class="absolute top-1/2 -translate-y-1/2 z-10 right-0 sm:right-[20px] md:-right-[20px] xl:-right-[50px] 2xl:-right-[6%]">
                     <button class="next2 slick-arrow">
                         <img src="./img/floor-plan/right.png" alt="right" class="w-5 lg:8 2xl:w-14" />
                     </button>
@@ -444,19 +465,21 @@
         <div class="xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 lg:px-10 2xl:px-0 py-10 lg:py-16">
             <h2 class="text-center font-bold text-black text-3xl lg:text-[40px]">Specifications
             </h2>
-            <div class="flex flex-col-reverse lg:flex-row gap-5 justify-between items-center mt-10 lg:mt-20 relative z-20">
-                <div class="w-full lg:w-[35%]">
+            <div
+                class="flex flex-col-reverse lg:flex-row gap-5 justify-between items-center mt-10 lg:mt-20 relative z-20">
+                <div class="w-full lg:w-[40%]">
                     <div id="accordionExample" class="space-y-2 lg:space-y-4">
                         <!-- single item -->
                         <div class="accordion-item">
                             <h2 class="mb-0">
                                 <button type="button"
                                     class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
-                                    data-accordion-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                                    data-img="Structure.png">
+                                    data-accordion-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne" data-img="Structure.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Structure</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Structure</span>
                                     </span>
                                 </button>
                             </h2>
@@ -475,18 +498,22 @@
                             <h2 class="mb-0">
                                 <button type="button"
                                     class="flex justify-between items-center w-full py-2 text-2xl lg:text-3xl font-semibold text-black bg-transparent focus:outline-none transition duration-150 ease-in-out"
-                                    data-accordion-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                    data-img="Flooring.png">
+                                    data-accordion-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" data-img="Flooring.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Flooring</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Flooring</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Living, Dining, Foyer, Family & other internal common areas: Vitrified Tiles
+                                    </li>
+                                    <li>Bathroom Floor: Anti-slip Vitrified Tiles</li>
+                                    <li>Bathroom Walls: Glazed tiles up to 7 feet height</li>
+                                    <li>Kitchen Walls: Glazed tiles up to 2 feet height</li>
                                 </ul>
                             </div>
                         </div>
@@ -499,14 +526,18 @@
                                     data-img="Doors.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Doors</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Doors</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse3" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Main Entrance: Teak Wood Frame with Teak Wood Panel Shutter</li>
+                                    <li>Internal Doors: Engineered wood Flush Door with Natural Wood Laminate Finish
+                                    </li>
+                                    <li>Bathroom Doors: WPC Frame & Shutter</li>
+                                    <li>Hardware: SS Hardware for doors</li>
                                 </ul>
                             </div>
                         </div>
@@ -519,14 +550,19 @@
                                     data-img="Plumbing-lines.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Plumbing lines</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Plumbing
+                                            lines</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse4" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Domestic Supply: CPVC</li>
+                                    <li>Hot Water Supply: CPVC</li>
+                                    <li>Rain Water: CPVC</li>
+                                    <li>Drainage: PVC</li>
+                                    <li>Internal Embedded: CPVC</li>
                                 </ul>
                             </div>
                         </div>
@@ -539,14 +575,17 @@
                                     data-img="Electrical.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Electrical</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Electrical</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse5" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Conducting Pipes: PVC</li>
+                                    <li>Wires: Copper with Fire Resistant PVC Coating</li>
+                                    <li>Switches: Modular switches (Anchor, Roma or equivalent)</li>
+                                    <li>Electrical Fixtures: Provision for Points only</li>
                                 </ul>
                             </div>
                         </div>
@@ -559,14 +598,14 @@
                                     data-img="Windows.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Windows</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Windows</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse6" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>2 & 3 track UPVC sliding windows / Aluminium</li>
                                 </ul>
                             </div>
                         </div>
@@ -579,14 +618,19 @@
                                     data-img="Bathroom.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Bathroom</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Bathroom</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse7" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    Fittings: Premium Quality Chrome Finish Fixtures (Jaguar or similar) for all
+                                    bathroom & kitchen
+                                    <li>Sanitary ware: White Colour Sanitary Fixtures (Jaguar or similar)</li>
+                                    <li>Utility Area: Water inlet & water outlet for washing machine & sink</li>
+                                    <li>Kitchen Area: SS Sink and slab will be provided</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -599,14 +643,17 @@
                                     data-img="Paint.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Paint</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Paint</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse8" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>External Surface: External Emulsion Paint</li>
+                                    <li>Internal Surface: Internal Emulsion Paint</li>
+                                    <li>Metal/Iron Surface: Enamel Paint</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -619,14 +666,16 @@
                                     data-img="Railing.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Railing</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Railing</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse9" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Staircase: MS Railing with wood top</li>
+                                    <li>Balcony: SS Railing with Toughened Glass</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -639,14 +688,14 @@
                                     data-img="Solar-provision.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Solar provision</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Air
+                                            conditioning</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse10" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Provision for Split A/Cs in Living & Master Bedroom</li>
                                 </ul>
                             </div>
                         </div>
@@ -659,14 +708,18 @@
                                     data-img="Miscellaneous.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Miscellaneous</span>
+                                        <span
+                                            class="accordion-title transition-colors duration-200 ease-in-out">Miscellaneous</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse11" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    Underground Sump Tank: 5000 litres
+                                    <li>OHT: 1000 litres Sintex Tank or equivalent</li>
+                                    <li>Individual water softener for each villa</li>
+                                    <li>Provision for UPS Point</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -679,21 +732,29 @@
                                     data-img="Other-advantages.png">
                                     <span class="flex items-center">
                                         <span class="icon mr-2 transition-transform duration-200 ease-in-out">+</span>
-                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Other advantages</span>
+                                        <span class="accordion-title transition-colors duration-200 ease-in-out">Other
+                                            advantages</span>
                                     </span>
                                 </button>
                             </h2>
                             <div id="collapse12" class="hidden py-2 px-4 text-gray-700" aria-labelledby="headingTwo">
                                 <ul class="list-disc text-black text-base lg:text-lg ms-5">
-                                    <li>RCC - Framed structure</li>
-                                    <li>Anti-termite treated</li>
+                                    <li>Building Design enables the best use of natural resources - Lighting and
+                                        Cross-ventilation for each Villa</li>
+                                    <li>RCC Column / Beam structure for stability and durability</li>
+                                    <li>Column & Beam in the villa are designed to support full area construction of 2nd
+                                        floor</li>
+                                    <li>Project approved by Private and Nationalised Bank</li>
+                                    <li>MUDA approved layout</li>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="w-full lg:w-[60%]" id="accrodionImg">
-                    <img src="./img/specifications/Structure.png" class="h-[200px] md:h-[500px] object-cover mx-auto" alt="">
+                    <img src="./img/specifications/Structure.png" class="h-[200px] md:h-[500px] object-cover mx-auto"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -725,7 +786,7 @@
     <section class="">
         <iframe class="block h-[300px] lg:h-[400px]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.7725804180022!2d76.57849929999999!3d12.3310883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b00199a5d8d%3A0x353598f6fff31eb9!2sHAPPINESS%202%20-%20Sunpure%20Homes!5e0!3m2!1sbn!2sbd!4v1724998866605!5m2!1sbn!2sbd"
-            width="100%"  style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
@@ -741,7 +802,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./index.js"></script>
-    
+
 </body>
 
 </html>
