@@ -11,13 +11,13 @@ $('.gallerySlider').slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 800,
+      breakpoint: 1024,
       settings: {
        slidesToShow: 2,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 750,
       settings: {
         slidesToShow: 1,
       },
@@ -40,13 +40,13 @@ $('.floorySlider').slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 800,
+      breakpoint: 1224,
       settings: {
        slidesToShow: 2,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 850,
       settings: {
         slidesToShow: 1,
       },
@@ -122,4 +122,16 @@ $('.floorySlider').slick({
 });
 
 
-   
+// menu 
+  document.addEventListener('DOMContentLoaded', function () {
+        const menuItems = document.querySelectorAll('.collapse-trigger');
+        const collapseMenu = document.getElementById('navbar-sticky');
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove the classes that keep the menu visible
+                collapseMenu.classList.add('hidden'); // Hides the menu
+                collapseMenu.classList.remove('block'); // Removes the block class if present
+            });
+        });
+    });
